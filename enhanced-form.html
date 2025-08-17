@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Starfleet Recruitment</title>
+    </head>
+    <body>
+        <figure>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Starfleet_logo_circle_black.svg/512px-Starfleet_logo_circle_black.svg.png?20171022152625" alt="The official logo of Starfleet command" style="width:150px;">
+            <figcaption>Starfleet Command</figcaption>
+        </figure>
+
+        <header>
+            <h1>Join Starfleet</h1>
+            <p>Explore the galaxy. Serve with honor. Become a legend</p>
+        </header>
+
+            <h2>Starfleet Ranks and Hierachy</h2>
+            <p>Welcome, Potential cadet! Before you begin your journey, farmiliarize yourself with the ranks of Starfleet Command.</p>
+
+            <ol>
+                <li>Cadet</li>
+                <li>Ensign</li>
+                <li>Lieutenat Junior Grade</li>
+                <li>Lieutenat</li>
+                <li>Lieutenat Commander</li>
+                <li>Commander</li>
+                <li>Captain</li>
+                <li>Commodore</li>
+                <li>Rear Admiral</li>
+                <li>Vice Admiral</li>
+                <li>Admiral</li>
+                <li>Fleet Admiral</li>
+            </ol>
+            
+            <h1>Starfleet Vessels</h1>
+            <p>Here is a list of some of the most notavle Starfleet ship classes and their primary mission profiles</p>
+            
+            <figure>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/USS_Enterprise_at_Space_Dock.jpg/1280px-USS_Enterprise_at_Space_Dock.jpg" alt="A view of the USS Enterprise (NCC-1701-D) docked at a Starfleet space station" style="width:300px;">
+                <figcaption>The Galaxy-Class USS Enterprise NCC-1701-D</figcaption>
+            </figure>
+
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Class</th>
+                        <th>Primary Mission</th>
+                        <th>Crew Complement</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Galaxy Class</td>
+                        <td>Escort, Tactical assignments</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <td>Intrepid Class</td>
+                        <td>Long-range exploration, scientific research</td>
+                        <td>150</td>
+                    </tr>
+                    <tr>
+                        <td>Sovereign Class</td>
+                        <td>Heavy explorer, defense</td>
+                        <td>700</td>
+                    </tr>
+                    <tr>
+                        <td>Akira Classs</td>
+                        <td>Heavy cruiser, tactical support
+                        <td>500</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h1>Starfleet In Action</h1>
+            <p>Shuttles transporting a new batch of Starfleet Ensigns officers reporting for duty</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/a3VbUpscgOc" title="Subspace Relayed Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; gyroscope; picture-in-picture " allowfullscreen></iframe>
+     
+        <body>
+            
+            <h1>Starfleet Cadet Application Form</h1>
+            <p>Complete the form below to begin your journey with Starfleet</p>
+
+            <form action="/submit-application" method="post">
+
+                <fieldset>
+                    <legend>Personal Information</legend>
+
+                    <label for="full name">Full Name:</label>
+                    <input type="text" id="full-name" name="full-name" required>
+
+                    <br><br>
+
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required> 
+
+                    <br><br>
+
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" required>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Cadet profile</legend>
+
+                    <label for="password">Create Password:</label>
+                    <input type="password" id="password" name="password" required minlength="8" placeholder="Must be at least 8 characters">
+
+                    <br><br>
+
+                    <label for="tel">Contact Number:</label>
+                    <input type="tel" id="tel" name="tel" placeholder="e.g, 072-612-3456" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                    <small>Format: 072-123-4567</small>
+
+                    <br><br>
+
+                    <label for="bio">Personal Statemnt:</label>
+                    <textarea id="bio" name="bio" rows="5" required minlength="50" placeholder="Tell us about your interest in Starfleet..."></textarea>
+
+                    <p>Species</p>
+                    <input type="radio" id="Human" name="Species" value="Human" required>
+                    <label for="Human">Human</label><br>
+                    <input type="radio" id="Vulcan" name="Species" value="Vulcan">
+                    <label for="Vulcan">Vulcan</label><br>
+                    <input type="radio" id="andorian" name="Species" value="andorian">
+                    <label for="andorian">Andorian</label>
+
+                    <br><br>
+
+                    <label for="age">Age</label>
+                    <input type="number" name="age" id="age" min="18" max="100" required>
+
+                    <br><br>
+                    
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">I agree to the Starfleet Code of Conduct.</label>
+
+                    <br><br>
+
+                    <label for="Application-id">Application ID (Auto-generated):</label>
+                    <input type="text" id="Application-id" name="Application-id" value="SF-250817" readonly autocomplete="off">
+                    
+                </fieldset>
+
+                <br><br>
+                <input type="submit" value="Submit Application">
+            </form>
+        
+        <main>
+
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Starfleet Academy</p>
+        </footer>
+    </body>
+</html>
